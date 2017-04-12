@@ -16,7 +16,7 @@ const (
 	ERR_COUNTRY_CODE_NOT_FOUND = 128
 )
 
-func serve(file string, port string) {
+func Serve(file string, port string) {
 
 	db, err := geoip2.Open(file)
 	if err != nil {
